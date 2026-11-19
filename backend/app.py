@@ -211,14 +211,13 @@ def my_registrations():
         return db_error(error)
 
 
-# Get event attendees
+# Get event attendees. Public endpoint: this API intentionally has no authn/authz.
 @app.get("/api/events/<event_id>/registrations")
 def event_registrations(event_id):
     event_id = valid_uuid(event_id)
-    organizer_id = valid_uuid(request.args.get("organizer_id"))
 
-    if not event_id or not organizer_id:
-        return jsonify(error="Valid event id and organizer_id are required"), 400
+    if not event_id:
+        return jsonify(error="Valid event id is required"), 400
 
     try:
         client = db()
@@ -231,28 +230,12 @@ def event_registrations(event_id):
         if not event_response.data:
             return jsonify(error="Event not found"), 404
 
-        if event_response.data[0].get("organizer_id") != organizer_id:
-            return jsonify(error="Organizer does not own this event"), 403
-
         rows = (
             client.table("registrations").select("*")
             .eq("event_id", event_id).execute().data
         )
 
-        attendees = []
-
-        for row in rows:
-            user_response = (
-                client.table("users").select("id,email,role")
-                .eq("id", row["user_id"]).limit(1).execute()
-            )
-
-            attendees.append({
-                **row,
-                "user": user_response.data[0] if user_response.data else None
-            })
-
-        return jsonify(attendees), 200
+        return jsonify(rows), 200
 
     except Exception as error:
         return db_error(error)
