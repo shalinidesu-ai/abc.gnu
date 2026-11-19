@@ -2,6 +2,6 @@ services:
   - type: web
     name: unipulse-frontend
     runtime: static
-    rootDir: design
-    buildCommand: echo "Publishing static frontend"
-    staticPublishPath: .
+    rootDir: frontend
+    buildCommand: npm ci && npm run build
+    staticPublishPath: dist
