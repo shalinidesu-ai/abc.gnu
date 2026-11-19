@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700&amp;family=Syne:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#141317;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-lowest": "#0f0d12", "surface-dim": "#141317", "on-surface": "#e6e1e7", "primary": "#dbb8ff", "on-primary-fixed-variant": "#6600b7", "tertiary-fixed": "#ffdea8", "on-primary-container": "#e1c4ff", "on-tertiary-fixed": "#271900", "surface-bright": "#3a383d", "tertiary-fixed-dim": "#ffba20", "secondary": "#ffb2ba", "on-error": "#690005", "surface-tint": "#dbb8ff", "background": "#141317", "inverse-primary": "#7f30d0", "primary-fixed": "#efdbff", "primary-fixed-dim": "#dbb8ff", "on-secondary": "#670020", "secondary-fixed-dim": "#ffb2ba", "on-secondary-container": "#ffe6e8", "on-surface-variant": "#cec2d6", "outline": "#988d9f", "on-tertiary-container": "#ffc659", "on-error-container": "#ffdad6", "surface-variant": "#363439", "on-secondary-fixed": "#400011", "on-tertiary": "#412d00", "on-secondary-fixed-variant": "#910030", "secondary-fixed": "#ffd9dc", "tertiary": "#ffba20", "on-tertiary-fixed-variant": "#5e4200", "outline-variant": "#4c4354", "on-primary-fixed": "#2b0052", "error-container": "#93000a", "surface-container-high": "#2b292e", "on-primary": "#470083", "on-background": "#e6e1e7", "surface-container-highest": "#363439", "primary-container": "#7928ca", "surface-container-low": "#1c1b20", "error": "#ffb4ab", "surface-container": "#201f24", "inverse-surface": "#e6e1e7", "inverse-on-surface": "#312f35", "tertiary-container": "#755200", "surface": "#141317", "secondary-container": "#d4004b" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "gutter-tablet": "1.5rem", "space-md": "1rem", "margin-tablet": "2rem", "gutter-desktop": "2rem", "space-xl": "2.5rem", "margin": "1rem", "margin-desktop": "3rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "gutter": "1rem" }, fontFamily: { "display": ["Syne"], "headline-lg": ["Syne"], "label-sm": ["Geist"], "headline-lg-mobile": ["Syne"], "label-md": ["Geist"], "headline-md": ["Syne"], "display-mobile": ["Syne"], "headline-sm": ["Syne"], "label-lg": ["Geist"], "body-sm": ["Geist"], "body-lg": ["Geist"], "body-md": ["Geist"] }, fontSize: { "display": ["56px", { lineHeight: "60px", letterSpacing: "-0.04em", fontWeight: "800" }], "headline-lg": ["36px", { lineHeight: "42px", letterSpacing: "-0.02em", fontWeight: "700" }], "label-sm": ["10px", { lineHeight: "14px", letterSpacing: "0.06em", fontWeight: "700" }], "headline-lg-mobile": ["28px", { lineHeight: "34px", letterSpacing: "-0.02em", fontWeight: "700" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "600" }], "headline-md": ["24px", { lineHeight: "30px", letterSpacing: "-0.01em", fontWeight: "700" }], "display-mobile": ["40px", { lineHeight: "44px", letterSpacing: "-0.03em", fontWeight: "800" }], "headline-sm": ["18px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "600" }], "label-lg": ["14px", { lineHeight: "18px", letterSpacing: "0.02em", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.01em", fontWeight: "400" }], "body-lg": ["16px", { lineHeight: "24px", letterSpacing: "-0.01em", fontWeight: "400" }], "body-md": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-20 px-space-md flex flex-col justify-center gap-space-xs"><div class="flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-xl bg-primary-container/30 flex items-center justify-center text-primary shadow-[0_0_16px_rgba(121,40,202,0.45)]"><span class="material-symbols-outlined text-[20px]">ecg_heart</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface leading-none">Uni<span class="text-primary">Pulse</span></span><span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant/70">Campus Live</span></div></div><div class="flex items-center gap-space-sm"><span class="font-label-md text-label-md text-on-surface hidden xs:block">Create Event</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="flex items-center gap-space-sm overflow-x-auto no-scrollbar"><div class="relative flex items-center shrink-0"><span class="absolute left-2.5 text-[14px] pointer-events-none">🎓</span><select aria-label="Active Role" class="h-7 pl-7 pr-6 bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded-full appearance-none outline-none focus:ring-1 focus:ring-primary"><option value="student">Student</option><option value="organizer">Organizer</option><option value="admin">Admin</option></select><span class="material-symbols-outlined absolute right-1.5 text-on-surface-variant pointer-events-none text-[16px]">expand_more</span></div><div class="relative flex items-center shrink-0 flex-1 max-w-[210px]"><span class="material-symbols-outlined absolute left-2 text-primary-fixed-dim pointer-events-none text-[14px]">badge</span><select aria-label="Active User Session" class="h-7 w-full pl-6 pr-6 bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded-full appearance-none outline-none focus:ring-1 focus:ring-primary truncate"><option value="usr_9a4f21">usr_9a4f21 (Alex · Student)</option><option value="usr_b82c19">usr_b82c19 (Sarah · Organizer)</option><option value="usr_4e77d0">usr_4e77d0 (Dev · Admin)</option></select><span class="material-symbols-outlined absolute right-1.5 text-on-surface-variant pointer-events-none text-[16px]">expand_more</span></div></div></div></header><main class="flex flex-col relative w-full pt-20 pb-20 bg-surface flex-1"><div class="flex flex-col w-full px-space-md pb-space-xl">
+<!-- Role Validation & Live Aura Banner -->
+<div class="flex items-center justify-between mb-space-md p-space-sm bg-surface-container-high rounded-full shadow-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="w-6 h-6 rounded-full bg-tertiary/20 flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary-fixed font-bold tracking-wider truncate uppercase">
+        🎪 Organizer Access Granted (usr_b82c19)
+      </span>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
+      LIVE DISPATCH
+    </span>
+</div>
+<!-- Hero Glass Form Header -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg mb-space-lg shadow-md">
+<div class="relative z-10 flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary tracking-widest uppercase">Console Dispatch</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-full">Schema v2.4</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Ignite Campus Pulse</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Deploy an underground set, late-night symposium, or varsity playoff into the central registry.</p>
+</div>
+<div class="absolute -right-10 -bottom-10 w-36 h-36 rounded-full bg-primary-container/20 blur-2xl pointer-events-none"></div>
+</div>
+<!-- Main Creation Form -->
+<form class="flex flex-col gap-space-lg" id="createEventForm" onsubmit="event.preventDefault();">
+<!-- Field: Event Title -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface" for="eventTitle">Event Title <span class="text-secondary">*</span></label>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="titleCharCount">0/60</span>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-primary text-[20px] pointer-events-none">local_activity</span>
+<input class="w-full h-12 pl-10 pr-4 bg-surface-container-high text-on-surface font-body-md text-body-md rounded-xl outline-none focus:bg-surface-bright transition-all placeholder:text-outline" id="eventTitle" maxlength="60" oninput="updatePayload(); document.getElementById('titleCharCount').innerText = this.value.length + '/60';" placeholder="e.g. Neon Cyber Fest 2026, Midnight Hackathon..." type="text" value="Neon Cyber Fest 2026"/>
+</div>
+</div>
+<!-- Field: Category Pills -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface">Category Taxonomy</label>
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 no-scrollbar" id="categoryPillGroup">
+<button class="category-pill shrink-0 px-4 py-2 rounded-full font-label-md text-label-md transition-all flex items-center gap-1.5 bg-primary text-on-primary shadow-[0_0_16px_rgba(219,184,255,0.4)]" data-cat="Tech" onclick="selectCategory(this, 'Tech')" type="button">
+<span class="material-symbols-outlined text-[16px]">terminal</span>Tech
+        </button>
+<button class="category-pill shrink-0 px-4 py-2 rounded-full font-label-md text-label-md transition-all flex items-center gap-1.5 bg-surface-container-high text-on-surface-variant" data-cat="Cultural" onclick="selectCategory(this, 'Cultural')" type="button">
+<span class="material-symbols-outlined text-[16px]">theater_comedy</span>Cultural
+        </button>
+<button class="category-pill shrink-0 px-4 py-2 rounded-full font-label-md text-label-md transition-all flex items-center gap-1.5 bg-surface-container-high text-on-surface-variant" data-cat="Sports" onclick="selectCategory(this, 'Sports')" type="button">
+<span class="material-symbols-outlined text-[16px]">sports_esports</span>Sports
+        </button>
+<button class="category-pill shrink-0 px-4 py-2 rounded-full font-label-md text-label-md transition-all flex items-center gap-1.5 bg-surface-container-high text-on-surface-variant" data-cat="Career" onclick="selectCategory(this, 'Career')" type="button">
+<span class="material-symbols-outlined text-[16px]">rocket_launch</span>Career
+        </button>
+</div>
+</div>
+<!-- Field: Capacity with Visual Threshold Slider -->
+<div class="flex flex-col gap-space-sm p-space-md rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-lg text-label-lg text-on-surface block">Max Capacity</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">column `capacity: int4`</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-high px-3 py-1 rounded-full">
+<span class="material-symbols-outlined text-primary text-[18px]">group</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-mono font-bold" id="capacityBadge">250</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">seats</span>
+</div>
+</div>
+<!-- Custom Range Bar -->
+<div class="flex flex-col gap-space-xs pt-2">
+<input class="w-full accent-primary bg-surface-container-highest h-2 rounded-full cursor-pointer outline-none" id="capacitySlider" max="1200" min="10" oninput="handleCapacityChange(this.value)" step="10" type="range" value="250"/>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant pt-1 font-mono">
+<span>Intimate (10)</span>
+<span>Hall (500)</span>
+<span>Stadium (1.2k)</span>
+</div>
+</div>
+<!-- Capacity Micro-Gauge Visualizer -->
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden mt-1">
+<div class="h-full bg-gradient-to-r from-primary to-secondary transition-all duration-200" id="capacityGaugeFill" style="width: 20%;"></div>
+</div>
+</div>
+<!-- Date, Time & Venue Block -->
+<div class="grid grid-cols-1 gap-space-md">
+<!-- Date & Hour -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface" for="eventDate">Target Schedule</label>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px] pointer-events-none">calendar_today</span>
+<input class="w-full h-12 pl-10 pr-2 bg-surface-container-high text-on-surface font-body-sm text-body-sm rounded-xl outline-none" id="eventDate" onchange="updatePayload()" type="date" value="2026-04-18"/>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px] pointer-events-none">schedule</span>
+<input class="w-full h-12 pl-10 pr-2 bg-surface-container-high text-on-surface font-body-sm text-body-sm rounded-xl outline-none" id="eventTime" onchange="updatePayload()" type="time" value="21:00"/>
+</div>
+</div>
+</div>
+<!-- Venue Field -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface" for="eventVenue">Campus Venue / Coordinates</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px] pointer-events-none">pin_drop</span>
+<input class="w-full h-12 pl-10 pr-4 bg-surface-container-high text-on-surface font-body-md text-body-md rounded-xl outline-none focus:bg-surface-bright transition-all placeholder:text-outline" id="eventVenue" oninput="updatePayload()" placeholder="Hall A, Engineering Wing, or Stream Link" type="text" value="Basement Lab 04 &amp; Quad Courtyard"/>
+</div>
+</div>
+</div>
+<!-- Status Selector -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-lg text-label-lg text-on-surface">Initial Lifecycle Status</span>
+<div class="grid grid-cols-3 gap-space-xs" id="statusRadioGroup">
+<button class="status-btn flex flex-col items-center justify-center p-space-sm rounded-xl bg-primary-container text-on-primary-container text-center transition-all shadow-[0_0_14px_rgba(121,40,202,0.4)]" onclick="selectStatus(this, 'published')" type="button">
+<span class="material-symbols-outlined text-[20px] mb-1">public</span>
+<span class="font-label-sm text-label-sm uppercase font-bold">Published</span>
+</button>
+<button class="status-btn flex flex-col items-center justify-center p-space-sm rounded-xl bg-surface-container-high text-on-surface-variant text-center transition-all" onclick="selectStatus(this, 'draft')" type="button">
+<span class="material-symbols-outlined text-[20px] mb-1">edit_document</span>
+<span class="font-label-sm text-label-sm uppercase font-bold">Draft</span>
+</button>
+<button class="status-btn flex flex-col items-center justify-center p-space-sm rounded-xl bg-surface-container-high text-on-surface-variant text-center transition-all" onclick="selectStatus(this, 'unlisted')" type="button">
+<span class="material-symbols-outlined text-[20px] mb-1">visibility_off</span>
+<span class="font-label-sm text-label-sm uppercase font-bold">Unlisted</span>
+</button>
+</div>
+</div>
+<!-- Interactive API Payload Preview Collapsible -->
+<div class="flex flex-col rounded-xl bg-surface-container-lowest overflow-hidden shadow-sm">
+<button class="w-full p-space-sm flex items-center justify-between text-left bg-surface-container-high hover:bg-surface-bright transition-colors" onclick="togglePayloadDrawer()" type="button">
+<div class="flex items-center gap-space-xs font-mono">
+<span class="material-symbols-outlined text-primary text-[18px]">data_object</span>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Payload Inspector: POST /api/events</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">JSON</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] transition-transform" id="drawerCaret">expand_more</span>
+</div>
+</button>
+<div class="p-space-md flex flex-col gap-space-xs" id="payloadContainer">
+<div class="flex items-center justify-between pb-1">
+<span class="font-label-sm text-label-sm text-outline-variant font-mono">Ready for execution</span>
+<button class="font-label-sm text-label-sm text-primary hover:underline flex items-center gap-0.5" onclick="copyPayload()" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span> Copy
+          </button>
+</div>
+<pre class="font-mono font-body-sm text-body-sm text-tertiary-fixed bg-surface-container-low p-space-sm rounded-lg overflow-x-auto select-all leading-relaxed whitespace-pre" id="payloadDisplay"></pre>
+</div>
+</div>
+<!-- Publish Glow Action CTA -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<button class="w-full h-14 rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg uppercase tracking-wider font-bold shadow-[0_0_28px_rgba(121,40,202,0.6)] flex items-center justify-center gap-space-xs active:scale-[0.98] transition-all" id="publishBtn" onclick="triggerEventPublish()" type="button">
+<span class="material-symbols-outlined text-[22px]">rocket</span>
+<span>Publish Campus Event</span>
+</button>
+<!-- Toast Feedback -->
+<div class="hidden items-center justify-between p-space-sm rounded-xl bg-secondary-container text-on-secondary-container animate-fade-in shadow-md" id="publishToast">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span class="font-label-md text-label-md">Event created &amp; queued on campus radar!</span>
+</div>
+<span class="font-label-sm text-label-sm font-mono opacity-80">201 CREATED</span>
+</div>
+</div>
+</form>
+<!-- Cross-Capability Bridge: Dual Access Assurance -->
+<div class="mt-space-lg p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">how_to_reg</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Dual Capability Enabled</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">You have full authority to both curate venues and RSVP as an attendee.</p>
+</div>
+</div>
+<!-- Quick link to Browse and Register -->
+<a class="w-full py-2.5 px-space-md rounded-xl bg-surface-container-high hover:bg-surface-bright text-on-surface transition-colors flex items-center justify-between group" data-path="events-feed" href="#">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">explore</span>
+<span class="font-label-md text-label-md text-on-surface group-hover:text-primary transition-colors">Browse Events &amp; Verify RSVP Flow</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<script>
+  // Local reactive state for the creation payload
+  const currentEventState = {
+    title: "Neon Cyber Fest 2026",
+    category: "Tech",
+    capacity: 250,
+    date: "2026-04-18",
+    time: "21:00",
+    venue: "Basement Lab 04 & Quad Courtyard",
+    status: "published",
+    organizer_id: "usr_b82c19",
+    target_endpoint: "/api/events"
+  };
+
+  function updatePayload() {
+    const titleVal = document.getElementById('eventTitle').value.trim();
+    const dateVal = document.getElementById('eventDate').value;
+    const timeVal = document.getElementById('eventTime').value;
+    const venueVal = document.getElementById('eventVenue').value.trim();
+
+    currentEventState.title = titleVal || "Untitled Event";
+    currentEventState.date = dateVal;
+    currentEventState.time = timeVal;
+    currentEventState.venue = venueVal;
+
+    const payloadObject = {
+      event_id: "evt_" + Math.random().toString(36).substring(2, 10),
+      organizer_id: currentEventState.organizer_id,
+      title: currentEventState.title,
+      category: currentEventState.category,
+      capacity: parseInt(currentEventState.capacity, 10),
+      venue: currentEventState.venue,
+      scheduled_at: `${currentEventState.date}T${currentEventState.time}:00Z`,
+      status: currentEventState.status,
+      created_at: new Date().toISOString()
+    };
+
+    const display = document.getElementById('payloadDisplay');
+    if (display) {
+      display.textContent = JSON.stringify(payloadObject, null, 2);
+    }
+  }
+
+  function handleCapacityChange(val) {
+    currentEventState.capacity = val;
+    document.getElementById('capacityBadge').innerText = val;
+    const fillPercent = ((val - 10) / (1200 - 10)) * 100;
+    document.getElementById('capacityGaugeFill').style.width = fillPercent + '%';
+    updatePayload();
+  }
+
+  function selectCategory(btn, cat) {
+    currentEventState.category = cat;
+    document.querySelectorAll('.category-pill').forEach(el => {
+      el.className = "category-pill shrink-0 px-4 py-2 rounded-full font-label-md text-label-md transition-all flex items-center gap-1.5 bg-surface-container-high text-on-surface-variant";
+    });
+    btn.className = "category-pill shrink-0 px-4 py-2 rounded-full font-label-md text-label-md transition-all flex items-center gap-1.5 bg-primary text-on-primary shadow-[0_0_16px_rgba(219,184,255,0.4)]";
+    updatePayload();
+  }
+
+  function selectStatus(btn, stat) {
+    currentEventState.status = stat;
+    document.querySelectorAll('.status-btn').forEach(el => {
+      el.className = "status-btn flex flex-col items-center justify-center p-space-sm rounded-xl bg-surface-container-high text-on-surface-variant text-center transition-all";
+    });
+    btn.className = "status-btn flex flex-col items-center justify-center p-space-sm rounded-xl bg-primary-container text-on-primary-container text-center transition-all shadow-[0_0_14px_rgba(121,40,202,0.4)]";
+    updatePayload();
+  }
+
+  function togglePayloadDrawer() {
+    const container = document.getElementById('payloadContainer');
+    const caret = document.getElementById('drawerCaret');
+    if (container.classList.contains('hidden')) {
+      container.classList.remove('hidden');
+      caret.style.transform = 'rotate(0deg)';
+    } else {
+      container.classList.add('hidden');
+      caret.style.transform = 'rotate(180deg)';
+    }
+  }
+
+  function copyPayload() {
+    const text = document.getElementById('payloadDisplay').innerText;
+    navigator.clipboard.writeText(text);
+  }
+
+  function triggerEventPublish() {
+    const btn = document.getElementById('publishBtn');
+    const toast = document.getElementById('publishToast');
+    
+    btn.innerHTML = `<span class="material-symbols-outlined text-[20px] animate-spin">refresh</span> Dispatching...`;
+    btn.disabled = true;
+
+    setTimeout(() => {
+      btn.innerHTML = `<span class="material-symbols-outlined text-[22px]">done_all</span> Published!`;
+      btn.classList.remove('bg-primary-container');
+      btn.classList.add('bg-surface-bright', 'text-on-surface');
+      toast.classList.remove('hidden');
+      toast.classList.add('flex');
+    }, 700);
+  }
+
+  // Initialize payload view
+  updatePayload();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.3)]" data-active-classes="text-primary fill-current font-bold"><div class="flex items-center justify-around h-16 px-space-sm"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="events-feed" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-sm text-label-sm">Events</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="my-registrations" href="#"><span class="material-symbols-outlined text-[22px]">confirmation_number</span><span class="font-label-sm text-label-sm">Tickets</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-space-xs transition-colors text-primary fill-current font-bold" data-path="create-event" href="#"><div class="w-9 h-9 -mt-3 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-[0_0_18px_rgba(121,40,202,0.55)]"><span class="material-symbols-outlined text-[22px]">add</span></div><span class="font-label-sm text-label-sm text-primary">Create</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="analytics-reports" href="#"><span class="material-symbols-outlined text-[22px]">monitoring</span><span class="font-label-sm text-label-sm">Reports</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="campus-pulse" href="#"><span class="material-symbols-outlined text-[22px]">podcasts</span><span class="font-label-sm text-label-sm">Pulse</span></a></div></nav></body></html>

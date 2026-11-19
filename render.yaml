@@ -1,13 +1,7 @@
 services:
   - type: web
-    name: event-registration-api
-    runtime: python
-    rootDir: backend
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT
-    healthCheckPath: /
-    envVars:
-      - key: SUPABASE_URL
-        sync: false
-      - key: SUPABASE_PUBLISHABLE_KEY
-        sync: false
+    name: unipulse-frontend
+    runtime: static
+    rootDir: design
+    buildCommand: echo "Publishing static frontend"
+    staticPublishPath: .
